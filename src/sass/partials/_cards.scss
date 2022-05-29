@@ -1,0 +1,232 @@
+.reviews {
+  display: inline-block;
+  margin-bottom: 2em;
+  p {
+    display: inline;
+    background-color: rgb(214, 154, 56);
+    color: rgb(255, 255, 255);
+    padding: 0.3em 0.7em;
+    border-radius: 5em 5em 5em 0em;
+    margin-bottom: 2em;
+    font-size: 0.7em;
+  }
+
+  span {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 0.7em;
+    display: inline;
+  }
+}
+
+.tags {
+  font-style: italic;
+  line-height: 2em;
+
+  li {
+    @media (max-width: $mobileXL-width) {
+      ////this flex column
+      display: inline;
+    }
+
+    &__icon {
+      font-size: 1.9em;
+    }
+  }
+}
+
+.cardbutton {
+  background-color: getColour(blue);
+  color: rgb(255, 255, 255);
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 20em;
+
+  @media (max-width: $tablet-width) {
+    padding: 0.8em 1em;
+  }
+
+  @media (max-width: $mobileXL-width) {
+    ////this flex column
+    padding: 0.8em 2em;
+  }
+}
+
+.card {
+  &:hover {
+    border: 0.1em solid rgb(196, 196, 196);
+  }
+}
+
+.accomodations {
+  width: 100%;
+  @include containerflex;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    padding: 2vw;
+  }
+
+  .card {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 5em;
+    border-radius: 1em;
+
+    @media (max-width: $tabletPRO-width) {
+      font-size: 0.8em;
+    }
+
+    @media (max-width: $tablet-width) {
+      //too small
+      font-size: 0.7em;
+    }
+
+    @media (max-width: $mobileXL-width) {
+      ////this flex column
+      flex-direction: column;
+      margin-top: 4em;
+    }
+
+    h3 {
+      @media (max-width: $tabletPRO-width) {
+        font-size: 1.4em;
+      }
+      @media (max-width: $tablet-width) {
+        font-size: 1.2em;
+      }
+
+      @media (max-width: $mobileXL-width) {
+        ////this flex column
+        font-size: 1.7em;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 1em;
+    }
+
+    img {
+      width: 20%;
+      flex: 2;
+      border-radius: 1em 0em 0em 1em;
+
+      @media (max-width: $tablet-width) {
+        width: 40%;
+      }
+
+      @media (max-width: $mobileXL-width) {
+        ////this flex column
+        width: 100%;
+        border-radius: 1em 1em 0em 0em;
+      }
+    }
+  }
+
+  .cardbody-one {
+    margin: 2em;
+    text-align: left;
+    flex: 3;
+
+    @media (max-width: $mobileXL-width) {
+      ////this flex column
+      text-align: center;
+      margin: 1em;
+
+      &__tags {
+        font-size: 1.1em;
+
+        li {
+          margin: 1em;
+        }
+      }
+    }
+
+    &__reviews {
+      @extend .reviews;
+    }
+
+    &__tags {
+      @extend .tags;
+    }
+  }
+
+  .cardbody-two {
+    align-self: flex-end;
+    margin: 2em;
+
+    @media (max-width: $mobileXL-width) {
+      ////this flex column
+      margin: 0em 0em 2em 0em;
+      align-self: center;
+      text-align: center;
+    }
+
+    &__price {
+      span {
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    }
+
+    &__booknow {
+      @extend .cardbutton;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+///// detail page
+
+.detailtext {
+  flex: 1;
+  @extend .cardbody-one;
+  @extend .cardbody-two;
+
+  h1 {
+    font-size: 0.8em;
+    @media (max-width: $tablet-width) {
+      font-size: 0.9em;
+    }
+  }
+
+  &__reviews {
+    @extend .reviews;
+  }
+
+  &__tags {
+    @extend .tags;
+
+    li {
+      line-height: 3em;
+      @media (max-width: $tablet-width) {
+        display: inline-block;
+        margin: 1em;
+      }
+    }
+  }
+
+  &__price {
+    span {
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+  }
+
+  &__booknow {
+    margin: 3em 0em;
+    @extend .cardbutton;
+    padding: 0.8em 3em;
+
+    &:hover {
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+/////

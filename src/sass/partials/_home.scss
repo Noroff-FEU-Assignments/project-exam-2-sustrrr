@@ -1,0 +1,122 @@
+.hero {
+  background-image: url(/img/frontpicture.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding: 15em 20em;
+  outline: 2px solid rgba(255, 255, 255, 0.631);
+  outline-offset: -10px;
+
+  @media (max-width: $tabletPRO-width) {
+    padding: 15em 7em;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 15em 2em;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 15em 1em;
+    outline-offset: -10px;
+  }
+
+  .h1 {
+    h1 {
+      text-align: center;
+      font-size: 0.7em;
+    }
+    margin-bottom: 1em;
+  }
+}
+
+////search
+.search {
+  display: flex;
+  justify-content: center; //this one on cards
+
+  &__input {
+    width: 90%;
+    font-style: italic;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .searchselect {
+    @media (max-width: $mobile-width) {
+      width: 110%;
+    }
+    input {
+      height: 2.3em;
+      min-height: 2.3em;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    left: -1.2em;
+    bottom: 0.2em;
+    font-size: 2.8em;
+    align-self: center;
+
+    @media (max-width: $mobile-width) {
+      left: -0.5em;
+    }
+
+    a {
+      color: getColour(accent);
+    }
+  }
+}
+
+select {
+  input {
+    height: 10em;
+  }
+}
+
+/*
+
+  ////search
+  .search {
+    display: flex;
+    justify-content: center; //this one on cards
+
+    &__input {
+      width: 90%;
+      font-style: italic;
+    }
+    
+    .css-6j8wv5-Input {
+        input {
+            height: 2.3em;
+        }
+    }
+
+    &__icon {
+      position: relative;
+      left: -1.2em;
+      bottom: 0.2em;
+      font-size: 2.8em;
+      align-self: center;
+
+      @media (max-width: $mobile-width) {
+        left: -1.1em;
+    }
+      a {
+      color: getColour(accent);
+    }
+    }
+  }
+
+
+  select {
+    input {
+    padding: 10em;
+}
+  }
+*/

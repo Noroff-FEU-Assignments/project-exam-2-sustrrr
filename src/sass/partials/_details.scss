@@ -1,0 +1,63 @@
+.detailpage {
+  .item-container {
+    @media (max-width: $tabletPRO-width) {
+      padding-top: 4em;
+    }
+  }
+  .detail {
+    display: flex;
+    grid-gap: 3em;
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .carousel {
+    flex: 3;
+
+    .visually-hidden {
+      display: none;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      opacity: 100%;
+
+      span {
+        background-color: #000;
+        padding: 0.5em;
+        border: 0.5em solid black;
+        border-radius: 50%;
+      }
+    }
+
+    .carousel-indicators {
+      button {
+        padding: 0.2em;
+        border: none;
+        margin: 1em;
+      }
+    }
+  }
+}
+
+.detailabout {
+  padding: 1em;
+  grid-gap: 3em;
+  width: 100%;
+  line-height: 1.1;
+
+  &__about {
+    margin-bottom: 3em;
+  }
+
+  &__location {
+    text-align: center;
+  }
+
+  &__icon {
+    font-size: 2.5em;
+    color: rgb(152, 0, 0);
+  }
+}

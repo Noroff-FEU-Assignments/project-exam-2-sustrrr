@@ -1,0 +1,124 @@
+nav {
+  background: getColour(primary);
+  width: 100%;
+  font-size: 0.9em;
+  position: fixed;
+  z-index: 5;
+
+  .searchicon {
+    font-size: 1.5em;
+  }
+
+  .navdesktop {
+    padding: 1em;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+
+    a {
+      display: inline;
+      padding: 0.5em 1em;
+      color: getcColour(darkgrey);
+
+      &:hover {
+        font-weight: bold;
+        color: getColour(accent);
+      }
+    }
+
+    .navbrand {
+      &:hover {
+        color: getColour(blue);
+      }
+    }
+
+    .active {
+      font-weight: bold;
+      color: getColour(accent);
+    }
+  }
+
+  .mobilemenu {
+    @media (max-width: $tablet-width) {
+      display: flex;
+      padding: 0.5em 1em;
+      width: 85%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbrand {
+      display: none;
+      @media (max-width: $tablet-width) {
+        display: inline-block;
+      }
+    }
+
+    button {
+      display: none;
+      @media (max-width: $tablet-width) {
+        display: inline-block;
+        border: none;
+        padding: 0em;
+        font-size: 2.7em;
+        line-height: 0em;
+        background-color: getColour(primary);
+      }
+    }
+
+    &__link {
+      display: block;
+      color: black;
+      padding: 1.5em;
+      font-size: 1.1em;
+
+      &:hover {
+        background-color: rgb(168, 168, 168);
+        color: white;
+      }
+    }
+
+    &__menu {
+      display: none;
+      text-align: center;
+      padding: 3em;
+      height: 90vh;
+      @media (max-width: $tablet-width) {
+        display: block;
+      }
+    }
+
+    &__menu.closed {
+      display: none;
+    }
+  }
+
+  .searchmobile {
+    font-size: 2em;
+  }
+
+  .ribbon {
+    background-color: getColour(secondary);
+    margin-top: 0.2em;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    color: white;
+
+    @media (max-width: $tablet-width) {
+      font-size: 0.9em;
+    }
+
+    span {
+      padding: 0 1.5em;
+      text-transform: uppercase;
+      background-color: getColour(secondary);
+    }
+  }
+}

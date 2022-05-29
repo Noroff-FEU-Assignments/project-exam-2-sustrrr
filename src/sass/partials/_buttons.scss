@@ -1,0 +1,36 @@
+.button-categories {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  grid-gap: 1em;
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    width: 80%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 80%;
+    flex-direction: column;
+    grid-gap: 2em;
+  }
+
+  &__button {
+    text-align: center;
+    flex: 1;
+    padding: 0.5em;
+    background-color: white;
+    border: 0.1em solid #ffae5d;
+
+    &:hover {
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      color: black;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 0.7em 5em;
+    }
+  }
+}

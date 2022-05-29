@@ -1,0 +1,27 @@
+@mixin imageheader {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    padding: 4em;
+    padding-top: 10em;
+}
+
+
+@mixin headingimage {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+@mixin containerflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+  }

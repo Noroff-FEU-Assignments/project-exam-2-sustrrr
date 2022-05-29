@@ -1,0 +1,28 @@
+$font-primary: "roboto", arial;
+$font-heading-one: "montserrat", sans-serif;
+$font-heading-two: "barlow condensed", sans-serif;
+$font-special: "Unica One", cursive;
+
+$tabletPRO-width: 1030px;
+$tablet-width: 768px;
+$mobileXL-width: 540px; ///cards
+$mobile-width: 414px;
+
+$colours: (
+  primary: #f5f5f5, ////navbar
+  secondary: #2F2F2F, //footer, ribbon
+
+  accent: #c6a800, //logo lines, dot,
+  orange: #FFAE5D, //book now, buttons
+
+  grey: #888888, //icons
+  darkgrey: #3E3E3E, //navtext
+  darkergrey: #454545, //text
+
+  blue: #46555C, //front buttons, contact us
+
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}

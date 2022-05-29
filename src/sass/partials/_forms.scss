@@ -1,0 +1,155 @@
+////
+.mailsent {
+  color: green;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 0.2em;
+}
+
+.mailfailed {
+  color: rgb(143, 29, 0);
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contactform {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+
+  &__background {
+    background-color: getColour(blue);
+    margin-bottom: 1em;
+    padding: 0em 1em;
+  }
+
+  &__item {
+    padding: 1em 0em;
+
+    label {
+      text-align: left;
+      display: block;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.2em;
+    }
+
+    textarea {
+      height: 14em;
+    }
+  }
+
+  &__button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 1em 4em;
+    border: 0.2em solid getColour(blue);
+    border-radius: 20em;
+
+    &:hover {
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .form-error {
+    color: rgb(255, 99, 99);
+    text-align: left;
+  }
+}
+
+/////
+
+.books {
+  padding-top: 8em;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 5em;
+  }
+}
+
+.bookform {
+  .mailsent {
+    margin-bottom: 2em;
+  }
+
+  .mailfailed {
+    margin-bottom: 2em;
+  }
+
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    font-family: $font-heading-one;
+    font-size: 2em;
+    color: getColour(accent);
+
+    @media (max-width: $tablet-width) {
+      font-size: 1.8em;
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 1.9em;
+    }
+  }
+
+  .contactform {
+    &__background {
+      width: 60%;
+      margin: 0 auto;
+      padding: 1em 2em;
+
+      @media (max-width: $tabletPRO-width) {
+        width: 80%;
+      }
+
+      @media (max-width: $tablet-width) {
+        width: 100%;
+        padding: 1em 1em;
+      }
+
+      .hideform {
+        display: none;
+      }
+
+      .datepicker {
+        display: flex;
+        text-align: left;
+        grid-gap: 4em;
+
+        p {
+          margin-bottom: 0.2em;
+        }
+
+        @media (max-width: $tablet-width) {
+          grid-gap: 2em;
+        }
+
+        @media (max-width: $mobile-width) {
+          grid-gap: 1em;
+
+          input {
+            width: 70%;
+          }
+        }
+      }
+    }
+
+    &__button {
+      margin: 2em;
+
+      &:hover {
+        font-weight: bold;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}

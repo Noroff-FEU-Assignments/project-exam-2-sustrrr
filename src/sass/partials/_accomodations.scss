@@ -1,0 +1,62 @@
+.guesthouse {
+  &__image {
+    background-image: url(/img/contact.jpg);
+    @include imageheader;
+  }
+
+  .search {
+    margin-top: 2em;
+    justify-content: left;
+    &__input {
+      width: 50%;
+      font-style: italic;
+      @media (max-width: $tablet-width) {
+        width: 90%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.hotels {
+  &__image {
+    background-image: url(/img/contact.jpg);
+    @include imageheader;
+  }
+
+  .search {
+    margin-top: 2em;
+    justify-content: left;
+    &__input {
+      width: 50%;
+      font-style: italic;
+      @media (max-width: $tablet-width) {
+        width: 90%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.bb {
+  &__image {
+    background-image: url(/img/contact.jpg);
+    @include imageheader;
+  }
+
+  .search {
+    margin-top: 2em;
+    justify-content: left;
+
+    &__input {
+      width: 50%;
+      font-style: italic;
+      @media (max-width: $tablet-width) {
+        width: 90%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/////
