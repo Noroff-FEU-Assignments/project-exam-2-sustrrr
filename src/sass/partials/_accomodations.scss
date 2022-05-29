@@ -1,6 +1,6 @@
 .guesthouse {
   &__image {
-    background-image: url(/img/contact.jpg);
+    background-image: url(/img/hotels.jpg);
     @include imageheader;
   }
 
@@ -40,7 +40,7 @@
 
 .bb {
   &__image {
-    background-image: url(/img/contact.jpg);
+    background-image: url(/img/bb.jpg);
     @include imageheader;
   }
 
