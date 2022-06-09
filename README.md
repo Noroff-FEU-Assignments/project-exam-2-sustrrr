@@ -36,7 +36,7 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```bash
-git clone (https://github.com/sustrrr/JavaScript-2-CA.git)
+git clone (https://github.com/Noroff-FEU-Assignments/project-exam-2-sustrrr.git)
 ```
 
 2. Install the dependencies:
