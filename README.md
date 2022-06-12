@@ -67,6 +67,9 @@ To run the app, run the following commands:
 npm start run
 ```
 
+## Contributing
+Open a pull request so the code can be reviewed and discussed
+
 
 ## Contact
 
