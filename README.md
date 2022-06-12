@@ -13,19 +13,34 @@ A simple overview of the use/purpose of the project.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+Built on React, called Holidaze.
 
-You can add some bullet points if you'd like to:
+This website has these pages/paths:
 
-- List item 1
-- List item 2
-- List item 3
+- home page
+- list of hotels
+ 	- page with the chosen hotel info
+- contact page
+- booking page
+
+- login page
+- dashboard page for admin
+ 	- list of booking enquiries
+ 	- list of contact messages
+ 	- page where admin creates establishment
+
+
+This website is made for a local tourism agency in Bergen, here users can book hotels, B&Bs and guesthouses in bergen. Users can search for different accommodations and make booking enquires. This website uses Wordpress API, where all the accommodations is stored.
+Users can send contact messages to Holidaze, this info goes to the API and the admin can log into the site to view the contact messages. The booking enquires goes to the API as well, and it gets displayed on the dashboard for the admin.
+
+An admin with the correct login information can log into the site. Here the admin can see a list of booking enquiries, contact messages and the admin can add a new establishment.
+
+The admin can choose the new establishments name, price, description, image and tags. Since the site displays hotels, guesthouses and B&B, the admin can choose which category the new establishment falls under.
 
 ## Built With
 
-- css
-- html
-- javascript
+- React.js
+- Sass
 
 ## Getting Started
 
